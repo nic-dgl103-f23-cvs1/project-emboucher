@@ -1,73 +1,124 @@
 /*global styles*/
 html {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 62.5%;
-  }
-  body {
-    margin: 0;
-    padding: 0;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    max-width: 100%;
-    overflow-x: hidden;
-    background-color: #FEFAE0;
-  }
-  h1, h2, h3{
-    font-family: 'Montserrat', sans-serif;
-    color: #606c38;
-  }
-  h1 {
-    font-size: 3.8rem;
-    
-    line-height: 4.2rem;
-    margin: 50px 20px 20px 20px;
-  }
-  h2 {
-    line-height: 4.2rem;
-    font-size: 3rem;
-    line-height: 3.2rem;
-  }
-  h3 {
-    font-size: 2.1rem;
-  }
-  p {
-    font-size: 1.4rem;
-  }
-  li {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-  }
-  .mobile-layout {
-    margin: 80px 20px 80px 20px;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .bg {
-    background-color: #FEFAE0;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: "Open Sans", sans-serif;
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #fefae0;
+}
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #606c38;
+}
+h1 {
+  font-size: 3.8rem;
+
+  line-height: 4.2rem;
+  margin: 50px 20px 20px 20px;
+}
+h2 {
+  line-height: 4.2rem;
+  font-size: 3rem;
+  line-height: 3.2rem;
+}
+h3 {
+  font-size: 2.1rem;
+}
+p {
+  font-size: 1.4rem;
+}
+li {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.mobile-layout {
+  margin: 80px 20px 80px 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.bg {
+  background-color: #fefae0;
+  margin: 0;
+  padding: 0;
+}
+
+/*--------LINKS---------*/
+.button {
+  font-size: 1.4rem;
+  font-weight: 900;
+  border-radius: 10px;
+  /* border: #BC6C25 solid 2px; */
+  background-color: #dda15e;
+  color: #fefae0;
+  width: 178px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 18px;
+  display: flex;
+  height: 15px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/*-------RESOURCES-------would like to add animation to the bottom of each card*/
+.market-card {
+  margin: 5px 80px;
+  width: 200px;
+  border-radius: 7%;
+  border:#dda15e solid 1px;
+  text-align: left;
+  display: inline-block;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.opacitylayer{
+  background: rgba(96, 108, 56, 0.3);
+  padding: 10px;
+  border-radius: 7%;
   
-  /*--------LINKS---------*/
-  .button {
-    font-size: 1.4rem;
-    font-weight: 900;
-    border-radius: 10px;
-    /* border: #BC6C25 solid 2px; */
-    background-color: #DDA15E;
-    color: #FEFAE0;
-    width: 178px;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 18px;
-    display: flex;
-    height: 15px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-  }
+}
+.market-card h3 {
+  margin: 230px 0 0 20px;
+  color: #fefae0;
+  font-size: 2.4rem;
+}
+.market-card p {
+  margin: 0 0 10px 20px;
+  color: #fefae0;
+}
+.market-card a {
+  margin: 20px 0 50px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #bc6c25;
+  font-weight: 900;
+}
+.market-card a:hover{
+  text-decoration: underline;
+}
+.sat.market-card{
+  background: rgba(96, 108, 56, 0.3);
+  background-image: url(images/sat-market.jpg);
+  background-size: cover;
+}
+.sun.market-card {
+  background-image: url(images/sun-market.jpg);
+  background-size: cover;
+}
+.wed.market-card {
+  background-image: url(images/wed-market.jpg);
+  background-size: cover;
+}
