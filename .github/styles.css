@@ -73,6 +73,11 @@ li {
   justify-content: center;
   margin-top: 20px;
 }
+.button:hover{
+    border: #BC6C25 solid 2px;
+    background-color: #fefae0;
+    color: #BC6C25;
+}
 
 /*-------RESOURCES-------would like to add animation to the bottom of each card*/
 .market-card {
@@ -141,4 +146,9 @@ li {
 }
 .community h3{
   margin-top: 50px;
+}
+
+/*--CONTACT--*/
+.contact h3{
+  margin-bottom: 0;
 }
