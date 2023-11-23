@@ -47,6 +47,7 @@ li {
   align-items: center;
   text-align: center;
 }
+
 .bg {
   background-color: #fefae0;
   margin: 0;
@@ -83,6 +84,13 @@ nav {
   display: flex;
   justify-content: center;
   margin: 10px;
+}
+.list-container {
+  display: none;
+  margin-left: 300px;
+}
+.button-container{ /*----I DONT UNDERSTAND WHY THIS DOESNT WORK IN MOBILE!!!!!! HELP!!!!*/
+  display: none;
 }
 /*-------RESOURCES-------would like to add animation to the bottom of each card*/
 .market-card {
@@ -212,39 +220,85 @@ footer li a:hover {
 
 /* Large devices (desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  
-    /*----GLOBAL STYLES FOR DESKTOP----*/
-    .desktop-layout{
-      max-width: 1170px;
-      margin: auto;
-    }
-  
+  /*----GLOBAL STYLES FOR DESKTOP----*/
+  .desktop-layout {
+    max-width: 1170px;
+    margin: auto;
+  }
+
   header {
     display: flex;
   }
-  header nav{
+  header nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
   }
-
-  header img{
+  .list-container {
+    display: flex;
+    justify-content: flex-end; /*why wont this work????? help!*/
+  }
+  header img {
     width: 50px;
   }
-.list-container ul{
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-}
-.list-container li{
-  margin-right: 20px;
-}
-.list-container a{
-  text-decoration: none;
-  color: #283618;
-  font-weight: 600;
-  font-size: 1.4rem;
+  .list-container ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .list-container li {
+    margin-right: 20px;
+  }
+  .list-container a {
+    text-decoration: none;
+    color: #283618;
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+
+  /*---HERO---*/
+  .hero {
+    display: flex;
+  }
+  .hero .button {
+    margin: 20px;
+  }
+
+  /*----OUR MARKETS DESKTOP----*/
+  .ourmarkets {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  .market-card{
+    margin: 10px;
+  }
+  .block-container{
+    display: flex;
+    flex-direction: row;
+  }
+  .link-layout{
+    display: flex;
+    flex-direction: column;
+  }/*----how do i move this link to below the other content???*/
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 90px;
+  }
+  .content-container h2 {
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  .card-container {
+    display: flex;
+    margin: 0;
+  }
+  /* .ipad-recources-h2 {
+    margin-bottom: 0;
+  } */
 }
