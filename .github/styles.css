@@ -19,7 +19,7 @@ h3 {
   color: #606c38;
 }
 h1 {
-  font-size: 3.8rem;
+  font-size: 2.8rem;
 
   line-height: 4.2rem;
   margin: 50px 20px 20px 20px;
@@ -73,27 +73,32 @@ li {
   justify-content: center;
   margin-top: 20px;
 }
-.button:hover{
-    border: #BC6C25 solid 2px;
-    background-color: #fefae0;
-    color: #BC6C25;
+.button:hover {
+  border: #bc6c25 solid 2px;
+  background-color: #fefae0;
+  color: #bc6c25;
 }
 
+/*--HEADER---*/
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
 /*-------RESOURCES-------would like to add animation to the bottom of each card*/
 .market-card {
   margin: 5px 80px;
   width: 200px;
   border-radius: 7%;
-  border:#dda15e solid 1px;
+  border: #606c38 solid 1px;
   text-align: left;
   display: inline-block;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
-.opacitylayer{
+.opacitylayer {
   background: rgba(96, 108, 56, 0.3);
   padding: 10px;
   border-radius: 7%;
-  
 }
 .market-card h3 {
   margin: 230px 0 0 20px;
@@ -104,17 +109,17 @@ li {
   margin: 0 0 10px 20px;
   color: #fefae0;
 }
-.market-card a /*--downtown courtenay link is out of line in mobile--*/{
+.market-card a /*--downtown courtenay link is out of line in mobile--*/ {
   margin: 20px 0 50px 20px;
   text-transform: uppercase;
   text-decoration: none;
   color: #bc6c25;
   font-weight: 900;
 }
-.market-card a:hover{
+.market-card a:hover {
   text-decoration: underline;
 }
-.sat.market-card{
+.sat.market-card {
   background: rgba(96, 108, 56, 0.3);
   background-image: url(images/sat-market.jpg);
   background-size: cover;
@@ -129,28 +134,79 @@ li {
 }
 
 /*----COMMUNITY----*/
-.community a{
-  width:50px;
-  margin:5px;
+.community a {
+  width: 50px;
+  margin: 5px;
   display: flex;
-  font-size: .8rem;
-  height:5px;
+  font-size: 0.8rem;
+  height: 5px;
   line-height: 9px;
 }
-.button-container{
+.button-container {
   display: flex;
   flex-direction: row;
 }
-.community p, .community h3{
+.community p,
+.community h3 {
   margin-bottom: 0;
 }
-.community h3{
+.community h3 {
   margin-top: 50px;
 }
 
 /*--CONTACT--*/
-.contact h3{
+.contact h3 {
   margin-bottom: 0;
 }
 
 /*---CTA---*/
+.bgcolour{
+  background-color: #606c38;
+}
+form{
+  margin: 20px 15px 40px 0;
+  text-align: right;
+}
+
+.cta{
+  color: #fefae0;
+}
+.cta h2{
+  font-weight: 700;
+  color: #fefae0;
+}
+
+/*-----FOOTER-----*/
+footer ul{
+  list-style-type: none;
+  margin: 40px;
+  padding: 0;
+}
+footer li a{
+  text-decoration: none;
+  color: #283618;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+footer li{
+  margin-top:30px;
+  
+}
+footer li a:hover{
+  text-decoration: underline;
+}
+
+/*----DISCLAIMER*----*/
+
+.disclaimer, .disclaimer h3{
+  display: inline-block;
+margin: 20px;
+color: #fefae0;
+}
+.disclaimer h3{
+  display: block;
+  text-align: center;
+}
+.disclaimer p{
+  font-style: italic;
+}
