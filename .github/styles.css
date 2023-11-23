@@ -20,7 +20,6 @@ h3 {
 }
 h1 {
   font-size: 2.8rem;
-
   line-height: 4.2rem;
   margin: 50px 20px 20px 20px;
 }
@@ -160,53 +159,92 @@ nav {
 }
 
 /*---CTA---*/
-.bgcolour{
+.bgcolour {
   background-color: #606c38;
 }
-form{
+form {
   margin: 20px 15px 40px 0;
   text-align: right;
 }
 
-.cta{
+.cta {
   color: #fefae0;
 }
-.cta h2{
+.cta h2 {
   font-weight: 700;
   color: #fefae0;
 }
 
 /*-----FOOTER-----*/
-footer ul{
+footer ul {
   list-style-type: none;
   margin: 40px;
   padding: 0;
 }
-footer li a{
+footer li a {
   text-decoration: none;
   color: #283618;
   font-weight: 600;
   font-size: 1.4rem;
 }
-footer li{
-  margin-top:30px;
-  
+footer li {
+  margin-top: 30px;
 }
-footer li a:hover{
+footer li a:hover {
   text-decoration: underline;
 }
 
 /*----DISCLAIMER*----*/
 
-.disclaimer, .disclaimer h3{
+.disclaimer,
+.disclaimer h3 {
   display: inline-block;
-margin: 20px;
-color: #fefae0;
+  margin: 20px;
+  color: #fefae0;
 }
-.disclaimer h3{
+.disclaimer h3 {
   display: block;
   text-align: center;
 }
-.disclaimer p{
+.disclaimer p {
   font-style: italic;
+}
+
+/* Large devices (desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+    /*----GLOBAL STYLES FOR DESKTOP----*/
+    .desktop-layout{
+      max-width: 1170px;
+      margin: auto;
+    }
+  
+  header {
+    display: flex;
+  }
+  header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  header img{
+    width: 50px;
+  }
+.list-container ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.list-container li{
+  margin-right: 20px;
+}
+.list-container a{
+  text-decoration: none;
+  color: #283618;
+  font-weight: 600;
+  font-size: 1.4rem;
 }
