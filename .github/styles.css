@@ -93,7 +93,7 @@ nav {
   /*----I DONT UNDERSTAND WHY THIS DOESNT WORK IN MOBILE!!!!!! HELP!!!!*/
   display: none;
 }
-/*-------RESOURCES-------would like to add animation to the bottom of each card*/
+/*-------OUR MARKETS-------would like to add animation to the bottom of each card*/
 .market-card {
   margin: 5px 80px;
   width: 200px;
@@ -160,6 +160,9 @@ nav {
 }
 .community h3 {
   margin-top: 50px;
+}
+.for-desktop-img{
+  display: none;
 }
 
 /*--CONTACT--*/
@@ -277,6 +280,7 @@ footer li a:hover {
   }
   .market-card {
     margin: 10px;
+    width: 300px;
   }
   .block-container {
     display: flex;
@@ -290,19 +294,52 @@ footer li a:hover {
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin-right: 90px;
+    margin-right: 30px;
   }
   .content-container h2 {
-    margin-bottom: 20px;
-    margin-top: 0;
+    margin-bottom: 20px 0 20px 0;
+    margin-top: 20px;
   }
   .card-container {
     display: flex;
     margin: 0;
   }
-  /* .ipad-recources-h2 {
-    margin-bottom: 0;
-  } */
+
+/*---------JOIN THE COMMUNITY--DESKTOP-----*/
+.community-container{
+  display: flex;
+  margin-top: 50px;
+}
+.for-desktop-img{display: flex;}/*---opacity layer not going on top of image??*/
+.community-container1{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.community-container2{
+  display: flex;
+}
+.perks{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 300px;
+}
+.button-container{
+  margin-top: 30px;
+}
+.community a {
+  width: 150px;
+  margin: 10px;
+  display: flex;
+  font-size: 1.8rem;
+  height: 5px;
+  line-height: 9px;
+}
+.community h3{
+  margin-top: 0;
+}
+/*----what size should p font be on desktop? it seems small currently*/
 
   /*---DISCLAIMER---*/
   .desktop-layout.disclaimer {
