@@ -89,7 +89,8 @@ nav {
   display: none;
   margin-left: 300px;
 }
-.button-container{ /*----I DONT UNDERSTAND WHY THIS DOESNT WORK IN MOBILE!!!!!! HELP!!!!*/
+.button-container {
+  /*----I DONT UNDERSTAND WHY THIS DOESNT WORK IN MOBILE!!!!!! HELP!!!!*/
   display: none;
 }
 /*-------RESOURCES-------would like to add animation to the bottom of each card*/
@@ -224,6 +225,8 @@ footer li a:hover {
   .desktop-layout {
     max-width: 1170px;
     margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 
   header {
@@ -271,19 +274,18 @@ footer li a:hover {
     flex-direction: row;
     justify-content: center;
     justify-content: space-between;
-    margin-top: 50px;
   }
-  .market-card{
+  .market-card {
     margin: 10px;
   }
-  .block-container{
+  .block-container {
     display: flex;
     flex-direction: row;
   }
-  .link-layout{
+  .link-layout {
     display: flex;
     flex-direction: column;
-  }/*----how do i move this link to below the other content???*/
+  } /*----how do i move this link to below the other content???*/
   .content-container {
     display: flex;
     flex-direction: column;
@@ -301,4 +303,24 @@ footer li a:hover {
   /* .ipad-recources-h2 {
     margin-bottom: 0;
   } */
+
+  /*---DISCLAIMER---*/
+  .desktop-layout.disclaimer {
+    margin-bottom: 0;
+  }
+  .disclaimer {
+    display: flex;
+    justify-content: center;
+  align-items: center;
+    margin-top: 20px;
+    max-width: 1170px;
+    flex-direction: column;
+  }
+  .disclaimer p{
+    margin-top: 10px;
+    text-align: center;
+  }
+  .disclaimer h3{
+    margin-bottom: 0;
+  }
 }
