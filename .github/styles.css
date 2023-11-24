@@ -3,6 +3,7 @@ html {
   font-family: "Open Sans", sans-serif;
   font-size: 62.5%;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -73,6 +74,12 @@ li {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  cursor:pointer;
+  transition: color 2s ease-in-out;
+  transition-property: all;
+ transition-duration: 200ms;
+ transition-timing-function: ease-in-out;
+ transition-delay: 0s;
 }
 .button:hover {
   border: #bc6c25 solid 2px;
@@ -90,10 +97,18 @@ nav {
   display: none;
   margin-left: 300px;
 }
-.button-container {
-  /*----I DONT UNDERSTAND WHY THIS DOESNT WORK IN MOBILE!!!!!! HELP!!!!*/
+
+/*----HERO------*/
+
+.hero iframe{
+  margin-top: 50px;
+}
+.hero .hide-on-mobile{
   display: none;
 }
+
+
+
 /*-------OUR MARKETS-------would like to add animation to the bottom of each card*/
 .market-card {
   margin: 5px 80px;
@@ -105,7 +120,7 @@ nav {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 .opacitylayer {
-  background: rgba(96, 108, 56, 0.3);
+  background: rgba(126, 134, 98, 0.37);
   padding: 10px;
   border-radius: 7%;
 }
@@ -129,7 +144,6 @@ nav {
   text-decoration: underline;
 }
 .sat.market-card {
-  background: rgba(96, 108, 56, 0.3);
   background-image: url(images/sat-market.jpg);
   background-size: cover;
 }
@@ -151,7 +165,7 @@ nav {
   height: 5px;
   line-height: 9px;
 }
-.button-container {
+.community .button-container {
   display: flex;
   flex-direction: row;
 }
@@ -176,10 +190,35 @@ nav {
   background-color: #606c38;
 }
 form {
-  margin: 20px 15px 40px 0;
-  text-align: right;
+  margin: 20px 15px;
+  display: flex;
+  flex-direction: column;
 }
-
+form input {
+  height: 20px;
+  font-size: 1.4rem;
+  color: #606c38;
+  background-color: #fefae0;
+  padding: 5px;
+  border-style: none;
+  border-radius: 7px;/*TODO---Why is it only rounding on the one side of the border?*/
+}
+.submit-button {
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  padding: 0;
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.form-button {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin-bottom: 60px;
+}
 .cta {
   color: #fefae0;
 }
@@ -189,6 +228,11 @@ form {
 }
 .for-desktop {
   display: none;
+}
+form label{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
 }
 
 /*-----FOOTER-----*/
@@ -238,6 +282,16 @@ footer li a:hover {
 
   header {
     display: flex;
+    justify-content: center;
+    width: 1170px;
+    align-items: center;
+  }
+  .nav-container{
+    margin: 0;
+    padding: 0;
+    background-color: #bc6c25;
+    display: flex;
+    justify-content: center;
   }
   header nav {
     display: flex;
@@ -260,28 +314,24 @@ footer li a:hover {
   .list-container li {
     margin-right: 20px;
   }
-  .list-container a {
+  .nav-container{
     text-decoration: none;
-    color: #283618;
-    font-weight: 600;
     font-size: 1.4rem;
+    color: #fefae0;
+    font-weight: 700;
   }
 
   /*---HERO---*/
   .hero {
     display: flex;
+    margin-top: 0;
   }
   .hero .button {
     margin: 20px;
   }
 
   /*----OUR MARKETS DESKTOP----*/
-  .ourmarkets {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-between;
-  }
+
   .market-card {
     margin: 10px;
     width: 300px;
@@ -293,7 +343,7 @@ footer li a:hover {
   .link-layout {
     display: flex;
     flex-direction: column;
-  } /*----how do i move this link to below the other content???*/
+  }
   .content-container {
     display: flex;
     flex-direction: column;
@@ -316,7 +366,20 @@ footer li a:hover {
   }
   .for-desktop-img {
     display: flex;
-  } /*---opacity layer not going on top of image??*/
+  } /*TODO ---opacity layer not going on top of image??*/
+ .bill{
+  background-image: url(images/bill.jpeg);
+  background-size: cover;
+  border-radius: 7%;
+  border: #606c38 solid 3px;
+ }
+ .opacitylayer-bill{
+  width: 400px;
+  height: 500px;
+    background: rgba(126, 134, 98, 0.37);
+    padding: 10px;
+    border-radius: 7%;
+ }
   .community-container1 {
     display: flex;
     flex-direction: column;
@@ -333,6 +396,7 @@ footer li a:hover {
   }
   .button-container {
     margin-top: 30px;
+    display: flex;
   }
   .community a {
     width: 150px;
@@ -377,22 +441,6 @@ footer li a:hover {
   }
   form input {
     width: 300px;
-    height: 20px;
-    font-size: 1.4rem;
-    color: #606c38;
-    background-color: #fefae0;
-    padding: 5px;
-  }
-  form button {
-    margin-top: 20px;
-    width: 150px;
-    height: 30px;
-    text-align: center;
-  }
-  .form-button {
-    display: flex;
-    justify-content: center;
-    width: 70%;
   }
   .cta {
     display: flex;
@@ -402,6 +450,8 @@ footer li a:hover {
   .cta h2{
 margin-top: 0;
   }
+
+  /*------------FOOTER DESKTOP-----------*/
 
   /*---DISCLAIMER---*/
   .desktop-layout.disclaimer {
@@ -422,4 +472,31 @@ margin-top: 0;
   .disclaimer h3 {
     margin-bottom: 0;
   }
+  footer {
+    display: flex;
+  }
+  footer nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  footer img {
+    width: 50px;
+  }
+  .list-container ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .list-container li {
+    margin-right: 20px;
+  }
+  .list-container a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #fefae0;
+    font-weight: 700;
+  }
+
 }
