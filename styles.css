@@ -110,6 +110,18 @@ nav {
 
 
 /*-------OUR MARKETS-------would like to add animation to the bottom of each card*/
+.block-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:0;
+  padding: 0;
+  width: 280px
+} /* TODO center the market cards on mobile ---*/
+.ourmarkets .desktop-layout{
+  display: none;
+}
+
 .market-card {
   margin: 5px 80px;
   width: 200px;
@@ -328,6 +340,10 @@ footer li a:hover {
   }
   .hero .button {
     margin: 20px;
+  }
+  .hero .hide-on-mobile{
+    display: flex;
+    margin-top: 10px;
   }
 
   /*----OUR MARKETS DESKTOP----*/
