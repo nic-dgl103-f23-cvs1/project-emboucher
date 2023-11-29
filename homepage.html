@@ -12,39 +12,68 @@
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="nav-container">
-    <header>
-      <nav>
-        <img
-          src="images/cvfm-logo.jpg"
-          width="50px"
-          alt="comox valley farmers market logo"
-        />
-        <!-- hoping to avoid using original logo but will leave for last incase too time consuming-->
-        <div class="list-container">
-          <ul>
-            <li><a href="#">Our Markets</a></li>
-            <li><a href="#">Join the Community</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Vendors</a></li>
-            <li><a href="#">Home</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+      <header>
+        <nav>
+          <img
+            src="images/cvfm-logo.jpg"
+            width="50px"
+            alt="comox valley farmers market logo"
+          />
+          <!-- hoping to avoid using original logo but will leave for last incase too time consuming-->
+          <div class="list-container">
+            <ul>
+              <li><a href="#">Our Markets</a></li>
+              <li><a href="#">Join the Community</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Vendors</a></li>
+              <li><a href="#">Home</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
     </div>
 
-    <section class="hero mobile-layout bg desktop-layout">
-      <h1>
-        Buy Local Eat Local <br /><strong>Comox Valley Farmer's Market</strong>
+    <section class="hero mobile-layout desktop-layout">
+      <video
+        id="background-video"
+        autoplay
+        loop
+        muted
+        playsinline
+        title="Video of Tomatoes"
+        poster="images/tomatosposter.png"
+      >
+        <source src="images/tomatovid.mp4" type="video/mp4" />
+      </video>
+      <div class="video-overlay"></div>
+
+      <h1 class="hide-on-mobile">
+        Buy Local - Eat Local - <strong> Comox Valley Farmer's Market</strong>
+      </h1>
+      <div class="hero-content-container">
+      <h1 class="hide-on-desktop">
+        Welcome to the Comox Valley Farmers Market!
       </h1>
       <blockquote>
         <i
@@ -53,24 +82,14 @@
           traditional keepers of this land.
         </i>
       </blockquote>
-      <iframe class="hide-on-mobile"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/qHPuSIHFMfo?si=NrXY9Nsm13w9N6kj"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-        allowautoplay
-      ></iframe>
-      <div class="video-overlay"></div>
       <div class="button-container">
         <a class="button" href="ourmarkets.html">Our Markets</a>
         <a class="button" href="community.html">Join the Community!</a>
       </div>
-      <!--EMBED YOUTUBE VIDEO HERE-->
+      </div>
     </section>
 
+    <div class="bg">
     <section class="ourmarkets mobile-layout desktop-layout">
       <div class="block-container">
         <div class="content-container">
@@ -108,6 +127,7 @@
         <a class="button" href="ourmarkets.html">Our Markets</a>
       </div>
     </section>
+    </div>
 
     <section class="community mobile-layout desktop-layout">
       <h2>Join the Community!</h2>
@@ -168,12 +188,6 @@
         <div class="bill for-desktop-img" width="300" height="500">
           <div class="opacitylayer-bill"></div>
         </div>
-        <!-- <img
-          class="for-desktop-img opacitylayer"
-          src="images/bill.jpeg"
-          width="400px"
-          alt="a senior customer shopping at the market"
-        /> -->
       </div>
     </section>
 
@@ -243,30 +257,31 @@
         </div>
       </section>
     </div>
-<div class="nav-container">
-    <footer class="mobile-layout desktop-layout">
-      <img src="images/cvfm-logo.JPG" />
-      <h2>Comox Valley Farmers Market</h2>
-      <p>
-        Rooted in Community, Nourished by Local Bounty - Comox Valley Farmers
-        Market - Your Source for Fresh Connections.
-      </p>
-      <nav>
-        <div class="list-container">
-        <ul>
-          <li><a href="#">Our Markets</a></li>
-          <li><a href="#">Join the Community</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Vendors</a></li>
-          <li><a href="#">Home</a></li>
-        </ul>
-      </div>
-      </nav>
-    </footer>
-</div>
 
-    <div class="bgcolour">
+    <div class="nav-container">
+      <footer class="mobile-layout desktop-layout">
+        <img src="images/cvfm-logo.JPG" />
+        <h2>Comox Valley Farmers Market</h2>
+        <p>
+          Rooted in Community, Nourished by Local Bounty - Comox Valley Farmers
+          Market - Your Source for Fresh Connections.
+        </p>
+        <nav>
+          <div class="list-container">
+            <ul>
+              <li><a href="#">Our Markets</a></li>
+              <li><a href="#">Join the Community</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Vendors</a></li>
+              <li><a href="#">Home</a></li>
+            </ul>
+          </div>
+        </nav>
+      </footer>
+    </div>
+
+    <div class="disclaimer-container bgcolour">
       <section class="disclaimer desktop-layout">
         <h3>Disclaimer</h3>
         <p>

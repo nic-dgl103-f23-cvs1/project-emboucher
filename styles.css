@@ -13,16 +13,17 @@ body {
   overflow-x: hidden;
   background-color: #fefae0;
 }
-h1,
 h2,
 h3 {
   font-family: "Montserrat", sans-serif;
   color: #606c38;
 }
 h1 {
-  font-size: 2.8rem;
-  line-height: 4.2rem;
+  font-size: 3.8rem;
+  line-height: 4.9rem;
   margin: 50px 20px 20px 20px;
+  color: #fefae0;
+  font-family: 'Amatic SC', sans-serif;
 }
 h2 {
   line-height: 4.2rem;
@@ -59,7 +60,7 @@ li {
 .button {
   font-size: 1.4rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 900;
+  font-weight: 400;
   border-radius: 10px;
   /* border: #BC6C25 solid 2px; */
   background-color: #dda15e;
@@ -74,12 +75,12 @@ li {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  cursor:pointer;
+  cursor: pointer;
   transition: color 2s ease-in-out;
   transition-property: all;
- transition-duration: 200ms;
- transition-timing-function: ease-in-out;
- transition-delay: 0s;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
 }
 .button:hover {
   border: #bc6c25 solid 2px;
@@ -100,25 +101,62 @@ nav {
 
 /*----HERO------*/
 
-.hero iframe{
+/* .hero iframe{
   margin-top: 50px;
-}
-.hero .hide-on-mobile{
+} */
+.hero .hide-on-mobile {
   display: none;
 }
-
-
+h1.hide-on-desktop{
+font-size: 2.4rem;
+line-height: 3rem;
+font-weight: 400;
+}
+#video-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#background-video,
+.video-overlay {
+  width: 100vw;
+  height: 90vh;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.video-overlay {
+  background-color: #606c38;
+  opacity: 0.3;
+}
+blockquote{
+  width: 320px;
+}
+i{
+  color: #fefae0;
+}
 
 /*-------OUR MARKETS-------would like to add animation to the bottom of each card*/
 .block-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin:0;
-  padding: 0;
-  width: 280px
+  margin: 0;
+  padding-top: 20px;
+  width: 280px;
 } /* TODO center the market cards on mobile ---*/
-.ourmarkets .desktop-layout{
+.ourmarkets .desktop-layout {
   display: none;
 }
 
@@ -213,7 +251,7 @@ form input {
   background-color: #fefae0;
   padding: 5px;
   border-style: none;
-  border-radius: 7px;/*TODO---Why is it only rounding on the one side of the border?*/
+  border-radius: 7px; /*TODO---Why is it only rounding on the one side of the border?*/
 }
 .submit-button {
   width: 150px;
@@ -241,7 +279,7 @@ form input {
 .for-desktop {
   display: none;
 }
-form label{
+form label {
   display: flex;
   justify-content: flex-start;
   margin-top: 10px;
@@ -250,7 +288,7 @@ form label{
 /*-----FOOTER-----*/
 footer ul {
   list-style-type: none;
-  margin: 40px;
+  margin: 15px;
   padding: 0;
 }
 footer li a {
@@ -264,6 +302,14 @@ footer li {
 }
 footer li a:hover {
   text-decoration: underline;
+}
+footer .list-container {
+  display: flex;
+  margin: 0;
+}
+
+footer p {
+  font-size: 2.4rem;
 }
 
 /*----DISCLAIMER*----*/
@@ -298,7 +344,7 @@ footer li a:hover {
     width: 1170px;
     align-items: center;
   }
-  .nav-container{
+  .nav-container {
     margin: 0;
     padding: 0;
     background-color: #bc6c25;
@@ -312,7 +358,7 @@ footer li a:hover {
   }
   .list-container {
     display: flex;
-    justify-content: flex-end; /*why wont this work????? help!*/
+    justify-content: flex-end;
   }
   header img {
     width: 50px;
@@ -326,7 +372,10 @@ footer li a:hover {
   .list-container li {
     margin-right: 20px;
   }
-  .nav-container{
+  .list-container li:hover{
+    text-decoration: underline;
+  }
+  .nav-container {
     text-decoration: none;
     font-size: 1.4rem;
     color: #fefae0;
@@ -341,9 +390,18 @@ footer li a:hover {
   .hero .button {
     margin: 20px;
   }
-  .hero .hide-on-mobile{
+  .hero .hide-on-mobile {
     display: flex;
-    margin-top: 10px;
+    margin-top: 100px;
+  }
+  h1.hide-on-mobile{
+    font-weight: 700;
+    font-size: 6.2rem;
+    margin: 50px;
+  }
+  .hero-content-container{
+    display: flex;
+    flex-direction: row;
   }
 
   /*----OUR MARKETS DESKTOP----*/
@@ -383,19 +441,19 @@ footer li a:hover {
   .for-desktop-img {
     display: flex;
   } /*TODO ---opacity layer not going on top of image??*/
- .bill{
-  background-image: url(images/bill.jpeg);
-  background-size: cover;
-  border-radius: 7%;
-  border: #606c38 solid 3px;
- }
- .opacitylayer-bill{
-  width: 400px;
-  height: 500px;
+  .bill {
+    background-image: url(images/bill.jpeg);
+    background-size: cover;
+    border-radius: 7%;
+    border: #606c38 solid 3px;
+  }
+  .opacitylayer-bill {
+    width: 400px;
+    height: 500px;
     background: rgba(126, 134, 98, 0.37);
     padding: 10px;
     border-radius: 7%;
- }
+  }
   .community-container1 {
     display: flex;
     flex-direction: column;
@@ -431,6 +489,10 @@ footer li a:hover {
   .for-desktop {
     display: flex;
   }
+
+  .cta.desktop-layout {
+    margin-bottom: 0;
+  }
   .hide-on-desktop {
     display: none;
   }
@@ -463,15 +525,20 @@ footer li a:hover {
     flex-direction: row;
     align-items: center;
   }
-  .cta h2{
-margin-top: 0;
+  .cta h2 {
+    margin-top: 0;
   }
 
   /*------------FOOTER DESKTOP-----------*/
 
   /*---DISCLAIMER---*/
-  .desktop-layout.disclaimer {
-    margin-bottom: 0;
+  section.disclaimer.desktop-layout {
+    margin: 0;
+  }
+  .disclaimer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .disclaimer {
     display: flex;
@@ -512,7 +579,6 @@ margin-top: 0;
     text-decoration: none;
     font-size: 1.4rem;
     color: #fefae0;
-    font-weight: 700;
+    font-weight: 400;
   }
-
 }
