@@ -23,7 +23,7 @@ h1 {
   line-height: 4.9rem;
   margin: 50px 20px 20px 20px;
   color: #fefae0;
-  font-family: 'Amatic SC', sans-serif;
+  font-family: "Amatic SC", sans-serif;
 }
 h2 {
   line-height: 4.2rem;
@@ -107,10 +107,10 @@ nav {
 .hero .hide-on-mobile {
   display: none;
 }
-h1.hide-on-desktop{
-font-size: 2.4rem;
-line-height: 3rem;
-font-weight: 400;
+h1.hide-on-desktop {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-weight: 400;
 }
 #video-container {
   position: relative;
@@ -140,10 +140,10 @@ video {
   background-color: #606c38;
   opacity: 0.3;
 }
-blockquote{
+blockquote {
   width: 320px;
 }
-i{
+i {
   color: #fefae0;
 }
 
@@ -235,7 +235,11 @@ i{
   margin-bottom: 0;
 }
 
+
 /*---CTA---*/
+.cta.desktop-layout {
+  margin-top: 0;
+}
 .bgcolour {
   background-color: #606c38;
 }
@@ -275,6 +279,7 @@ form input {
 .cta h2 {
   font-weight: 700;
   color: #fefae0;
+  margin-top: 50px;
 }
 .for-desktop {
   display: none;
@@ -310,6 +315,7 @@ footer .list-container {
 
 footer p {
   font-size: 2.4rem;
+  display: none;
 }
 
 /*----DISCLAIMER*----*/
@@ -372,7 +378,7 @@ footer p {
   .list-container li {
     margin-right: 20px;
   }
-  .list-container li:hover{
+  .list-container li:hover {
     text-decoration: underline;
   }
   .nav-container {
@@ -390,18 +396,24 @@ footer p {
   .hero .button {
     margin: 20px;
   }
+  .hero .button-container {
+    margin: 10px;
+  }
   .hero .hide-on-mobile {
     display: flex;
-    margin-top: 100px;
+    color: #fefae0;
   }
-  h1.hide-on-mobile{
+  h1.hide-on-mobile {
     font-weight: 700;
     font-size: 6.2rem;
     margin: 50px;
   }
-  .hero-content-container{
+  .hero-content-container {
     display: flex;
     flex-direction: row;
+  }
+  h2.hide-on-mobile {
+    color: #fefae0;
   }
 
   /*----OUR MARKETS DESKTOP----*/
@@ -484,7 +496,25 @@ footer p {
     margin-top: 0;
   }
   /*----what size should p font be on desktop? it seems small currently*/
-
+  /*-----CONTACT FOR DESKTOP------------*/
+  .contact-container {
+    background-image: url(images/courtenay-map.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-content: center;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 300px 0;
+    padding: 0;
+    background-color: #fefae0;
+  }
+  
   /*-------CTA For desktop------*/
   .for-desktop {
     display: flex;
@@ -501,11 +531,7 @@ footer p {
     width: 48%;
     margin: 1%;
   }
-  .cta-content-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
-  }
+
   form {
     display: flex;
     flex-direction: column;
@@ -532,30 +558,11 @@ footer p {
   /*------------FOOTER DESKTOP-----------*/
 
   /*---DISCLAIMER---*/
-  section.disclaimer.desktop-layout {
-    margin: 0;
-  }
-  .disclaimer-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .disclaimer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    max-width: 1170px;
-    flex-direction: column;
-  }
-  .disclaimer p {
-    margin-top: 10px;
-    text-align: center;
-  }
-  .disclaimer h3 {
-    margin-bottom: 0;
-  }
+
   footer {
+    display: flex;
+  }
+  footer p{
     display: flex;
   }
   footer nav {
@@ -580,5 +587,28 @@ footer p {
     font-size: 1.4rem;
     color: #fefae0;
     font-weight: 400;
+  }
+  section.disclaimer.desktop-layout {
+    margin: 0;
+  }
+  .disclaimer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .disclaimer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    max-width: 1170px;
+    flex-direction: column;
+  }
+  .disclaimer p {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .disclaimer h3 {
+    margin-bottom: 0;
   }
 }
