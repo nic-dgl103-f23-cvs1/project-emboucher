@@ -15,15 +15,15 @@ body {
 }
 h2,
 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Scope One', serif;
   color: #606c38;
 }
 h1 {
-  font-size: 3.8rem;
+  font-size: 2.8rem;
   line-height: 4.9rem;
   margin: 50px 20px 20px 20px;
   color: #fefae0;
-  font-family: "Amatic SC", sans-serif;
+  font-family: 'Scope One', serif;
 }
 h2 {
   line-height: 4.2rem;
@@ -90,7 +90,7 @@ li {
 
 /*--HEADER---*/
 .nav-container{
-  background-color: #283618;
+  background-color: #fefae0;
   margin-top: 0;
 }
 nav {
@@ -102,12 +102,11 @@ nav {
   display: flex;
   align-items: center;
   cursor: pointer;
-  padding: 10px;
-}
-.logo img{
+  padding: 0px;
   height: auto;
-  width: 24px;
+  width: 100px;
 }
+
 .list-container {
   display: none;
 }
@@ -150,7 +149,7 @@ nav {
   margin-top: 0;
 }
 h1.hide-on-desktop {
-  font-size: 4.5rem;
+  font-size: 3.2rem;
   line-height: 4rem;
   font-weight: 400;
 }
@@ -435,6 +434,9 @@ footer p {
     font-size: 1.4rem;
     color: #fefae0;
     font-weight: 700;
+  }
+  .logo{
+    display: none;
   }
 
   /*---HERO---*/
