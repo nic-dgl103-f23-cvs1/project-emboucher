@@ -104,7 +104,6 @@ nav {
   cursor: pointer;
   padding: 0px;
   height: auto;
-  width: 100px;
 }
 
 .list-container {
@@ -154,33 +153,33 @@ h1.hide-on-desktop {
   font-weight: 400;
 }
 #video-container {
-  position: relative;
   width: 100%;
   height: auto;
   overflow: hidden;
+  margin-bottom: 50px;
 }
-video {
+
+#background-video{
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-#background-video,
-.video-overlay {
-  width: 100vw;
-  /* height: 90vh; */
-  object-fit: cover;
-  position: absolute;
-  left: 0;
-  top: 0;
   z-index: -1;
 }
+
 .video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
   background-color: #606c38;
   opacity: 0.3;
 }
+
 i {
   color: #fefae0;
   font-size: 1.3rem;
@@ -202,6 +201,7 @@ a.button {
 .mobile-layout {
   display: block;
   margin-bottom: 20px;
+  margin-top: 60px;
 }
 
 .market-card {
@@ -624,9 +624,6 @@ footer p {
     display: flex;
     align-items: center;
     padding: 10px 20px;
-  }
-  footer img {
-    width: 50px;
   }
   .list-container ul {
     list-style: none;

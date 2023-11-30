@@ -1,4 +1,74 @@
-      <!-- <iframe class="hide-on-mobile"
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Markets</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function toggleMobileNav() {
+        var listContainer = document.querySelector(".list-container");
+        listContainer.classList.toggle("show-mobile");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="nav-container">
+      <header>
+        <nav>
+          <img
+            class="logo"
+            onclick="toggleMobileNav()"
+            src="images/logo1.png"
+            width="150px"
+            alt="comox valley farmers market logo and menue"
+          />
+          <!-- hoping to avoid using original logo but will leave for last incase too time consuming-->
+          <div class="list-container">
+            <ul>
+              <li><a href="homepage.html">Home</a></li>
+              <li><a href="ourmarkets.html">Our Markets</a></li>
+              <li><a href="community.html">Join the Community</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Vendors</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+      <iframe class="hide-on-mobile"
         width="560"
         height="315"
         src="https://www.youtube.com/embed/qHPuSIHFMfo?si=NrXY9Nsm13w9N6kj"
@@ -7,4 +77,156 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
         allowautoplay
-      ></iframe> -->
+      ></iframe>
+
+
+      <div class="bg">
+        <section class="ourmarkets mobile-layout desktop-layout">
+          <div class="block-container">
+            <div class="content-container mobile-layout">
+              <h2>Mark Your Calendar!</h2>
+              <p>
+                Don't miss out on these community events! Make sure to mark your
+                calendar, support local, and eat well.
+              </p>
+            </div>
+            <div class="card-container">
+              <div class="market-card sat">
+                <div class="opacitylayer">
+                  <h3>Saturday Market</h3>
+                  <a href="ourmarkets.html">Courtenay</a>
+                  <p>Summer, Fall, Winter</p>
+                </div>
+              </div>
+              <div class="market-card sun">
+                <div class="opacitylayer">
+                  <h3>Sunday Market</h3>
+                  <a href="ourmarkets.html">Cumberland</a>
+                  <p>Summer</p>
+                </div>
+              </div>
+              <div class="market-card wed">
+                <div class="opacitylayer">
+                  <h3>Wednesday Market</h3>
+                  <a href="ourmarkets.html">Downtown Courtenay</a>
+                  <p>Summer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="link-layout">
+            <a class="button" href="ourmarkets.html">Our Markets</a>
+          </div>
+        </section>
+      </div>
+
+
+      <div class="contact-container hide-on-mobile">
+        <section class="contact mobile-layout desktop-layout">
+          <h2>Contact us</h2>
+          <h3>We'd love to hear from you!</h3>
+          <iframe
+            class="hide-on-desktop"
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d10322.593830659443!2d-125.011117720889!3d49.69859257238851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scomox%20valley%20farmers%20market!5e0!3m2!1sen!2sca!4v1701313614914!5m2!1sen!2sca"
+            width="200"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <p>
+            Looking for a vendor? Want to donate to our New Farmer Bursary Fund?
+            Need a bag or market tokens? Lost something or have a suggestion?
+            Please let us know. The market staff and volunteers on site can help
+            you out, or for other inquiries, you can contact us online.
+          </p>
+          <h3>Contact Info</h3>
+          <!--need to add icons here-->
+          <address>
+            PO Box 3301 Courtenay BC V9N 5N5<br />
+            info@cvfm.ca <br />
+            <a href="https://www.instagram.com/comox_valley_farmers_market/"
+              >Instagram</a
+            >
+          </address>
+        </section>
+      </div>
+  
+      <div class="bgcolour">
+        <section class="cta mobile-layout desktop-layout">
+          <div class="cta-content-container">
+            <h2>Stay in Touch!</h2>
+            <p class="hide-on-desktop">Sign up for our newsletter!</p>
+            <p class="for-desktop">
+              Ready to turnip the beet in your inbox? Sign up for our newsletter
+              and lettuce keep you in the loop with all the fresh and fabulous
+              CVFM fun! Be the first to know about upcoming markets, seasonal
+              goodies, and exclusive promotions that are so grape, you won't want
+              to miss them. Join our community, and together, we'll create a
+              veggie good time! Subscribe today!
+            </p>
+          </div>
+  
+          <form action="#" method="post">
+            <label for="fname">First Name:</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Ex: John"
+            />
+  
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder=" Ex: Smith" />
+  
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Ex: john.smith@outlook.com"
+            />
+          </form>
+          <div class="form-button">
+            <input class="button submit-button" type="submit" value="Submit" />
+          </div>
+        </section>
+      </div>
+  
+      <div class="nav-container">
+        <footer class="mobile-layout desktop-layout">
+          <img src="images/logo1.png" width="150px" />
+          <p>
+            Rooted in Community, Nourished by Local Bounty - Comox Valley Farmers
+            Market - Your Source for Fresh Connections.
+          </p>
+          <nav>
+            <div class="list-container">
+              <ul>
+                <li><a href="#">Our Markets</a></li>
+                <li><a href="#">Join the Community</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Vendors</a></li>
+                <li><a href="#">Home</a></li>
+              </ul>
+            </div>
+          </nav>
+        </footer>
+      </div>
+  
+      <div class="disclaimer-container bgcolour">
+        <section class="disclaimer desktop-layout">
+          <h3>Disclaimer</h3>
+          <p>
+            This is a fictional website that was designed and coded as an
+            educational exercise it is not intended to be seen outside of the
+            class enironment. None of the class environment. None of the content
+            and images were approved by the business owner.
+          </p>
+        </section>
+      </div>
+    </body>
+  </html>
+  
