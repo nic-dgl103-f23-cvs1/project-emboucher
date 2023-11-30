@@ -29,15 +29,21 @@
       href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script>
+      function toggleMobileNav() {
+        var listContainer = document.querySelector('.list-container');
+        listContainer.classList.toggle('show-mobile');
+      }
+    </script>
   </head>
   <body>
     <div class="nav-container">
       <header>
         <nav>
-          <img
+          <img class="logo" onclick="toggleMobileNav()"
             src="images/cvfm-logo.jpg"
             width="50px"
-            alt="comox valley farmers market logo"
+            alt="comox valley farmers market logo and menue"
           />
           <!-- hoping to avoid using original logo but will leave for last incase too time consuming-->
           <div class="list-container">
