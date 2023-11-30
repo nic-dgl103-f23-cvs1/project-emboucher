@@ -101,9 +101,7 @@ nav {
 
 /*----HERO------*/
 
-/* .hero iframe{
-  margin-top: 50px;
-} */
+
 .hero .hide-on-mobile {
   display: none;
 }
@@ -143,16 +141,17 @@ video {
   background-color: #606c38;
   opacity: 0.3;
 }
-
 i {
   color: #fefae0;
+  font-size: 1.3rem;
+  line-height: 1rem;
 }
 a.button{
   margin: 15px;
 }
 
 /*-------OUR MARKETS-------would like to add animation to the bottom of each card*/
- /* TODO center the market cards on mobile ---*/
+
 .ourmarkets .desktop-layout {
   display: none;
 }
@@ -240,17 +239,17 @@ display: block;
 .contact h3 {
   margin-bottom: 0;
 }
-
+iframe{
+  margin-top: 50px;
+}
 
 /*---CTA---*/
-.cta.desktop-layout {
-  margin-top: 0;
+.cta.mobile-layout {
+  display: flex;
+  align-content: center;
 }
 .bgcolour {
   background-color: #606c38;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  background-size: cover;
 }
 form {
   margin: 20px 15px;
