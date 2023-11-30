@@ -107,9 +107,12 @@ nav {
 .hero .hide-on-mobile {
   display: none;
 }
+.hero.mobile-layout{
+  margin-top: 0;
+}
 h1.hide-on-desktop {
-  font-size: 2.4rem;
-  line-height: 3rem;
+  font-size: 4.5rem;
+  line-height: 4rem;
   font-weight: 400;
 }
 #video-container {
@@ -129,7 +132,7 @@ video {
 #background-video,
 .video-overlay {
   width: 100vw;
-  height: 90vh;
+  /* height: 90vh; */
   object-fit: cover;
   position: absolute;
   left: 0;
@@ -140,34 +143,37 @@ video {
   background-color: #606c38;
   opacity: 0.3;
 }
-blockquote {
-  width: 320px;
-}
+
 i {
   color: #fefae0;
 }
+a.button{
+  margin: 15px;
+}
 
 /*-------OUR MARKETS-------would like to add animation to the bottom of each card*/
-.block-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
-  padding-top: 20px;
-  width: 280px;
-} /* TODO center the market cards on mobile ---*/
+ /* TODO center the market cards on mobile ---*/
 .ourmarkets .desktop-layout {
   display: none;
 }
+.block-container{
+display: block;
+}
+
+.mobile-layout{
+  display: block;
+  margin-bottom: 20px;
+
+}
 
 .market-card {
-  margin: 5px 80px;
   width: 200px;
   border-radius: 7%;
   border: #606c38 solid 1px;
   text-align: left;
   display: inline-block;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
 }
 .opacitylayer {
   background: rgba(126, 134, 98, 0.37);
@@ -242,6 +248,9 @@ i {
 }
 .bgcolour {
   background-color: #606c38;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-size: cover;
 }
 form {
   margin: 20px 15px;
@@ -255,7 +264,7 @@ form input {
   background-color: #fefae0;
   padding: 5px;
   border-style: none;
-  border-radius: 7px; /*TODO---Why is it only rounding on the one side of the border?*/
+  border-radius: 7px;
 }
 .submit-button {
   width: 150px;
@@ -275,12 +284,13 @@ form input {
 }
 .cta {
   color: #fefae0;
+  margin-top: 50px;
 }
 .cta h2 {
   font-weight: 700;
   color: #fefae0;
   margin-top: 50px;
-}
+}/*--- TODO Fix margin spacing of content section... */
 .for-desktop {
   display: none;
 }
@@ -393,6 +403,9 @@ footer p {
     display: flex;
     margin-top: 0;
   }
+  blockquote {
+    width: 320px;
+  }
   .hero .button {
     margin: 20px;
   }
@@ -421,6 +434,7 @@ footer p {
   .market-card {
     margin: 10px;
     width: 300px;
+    margin: 5px 80px;
   }
   .block-container {
     display: flex;
@@ -514,7 +528,7 @@ footer p {
     padding: 0;
     background-color: #fefae0;
   }
-  
+
   /*-------CTA For desktop------*/
   .for-desktop {
     display: flex;
