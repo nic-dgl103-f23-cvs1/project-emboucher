@@ -370,6 +370,38 @@ a.button {
 .contact h3 {
   margin-bottom: 0;
 }
+.contact address{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-style: normal;
+}
+.email a{
+  text-decoration: none;
+  color: #fefae0;
+}
+.icon-holder{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+.icon-holder p{
+  margin:0 auto;
+
+}
+.icon-holder i{
+  font-size: 3.2rem;
+  margin-right: 15px;
+}
+a.social-media{
+  text-decoration: none;
+  font-style: none;
+  font-family: "lobster", serif;
+  font-size: 2.3rem;
+  color: #fefae0;
+}
 iframe {
   margin-top: 50px;
 }
@@ -392,11 +424,14 @@ form {
 form input {
   height: 20px;
   font-size: 1.4rem;
-  color: #606c38;
+  color: #283618;
   background-color: #fefae0;
   padding: 5px;
   border-style: none;
   border-radius: 7px;
+}
+input::placeholder{
+  color: #dfc9af;
 }
 .submit-button {
   width: 150px;
@@ -464,6 +499,9 @@ footer nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+footer.mobile-layout.desktop-layout nav{
+  margin-bottom: 60px;
 }
 /*----DISCLAIMER*----*/
 
