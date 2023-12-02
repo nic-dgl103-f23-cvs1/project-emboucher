@@ -62,7 +62,7 @@ li {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   border-radius: 10px;
-  /* border: #BC6C25 solid 2px; */
+  border: #dda15e solid 2px;
   background-color: #dda15e;
   color: #fefae0;
   width: 178px;
@@ -89,54 +89,69 @@ li {
 }
 
 /*--HEADER---*/
-.nav-container{
-  background-color: #fefae0;
-  margin-top: 0;
+header {
+  padding: 0 21px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 nav {
   display: flex;
-  justify-content: center;
-  margin: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 .logo {
   display: flex;
   align-items: center;
+}
+.nav-container{
+  background-color: #fefae0;
+  margin-top: 0;
+}
+.toggle i {
+  color: #bc6c25;
+  font-size: 24px;
   cursor: pointer;
-  padding: 0px;
-  height: auto;
 }
-
-.list-container {
+#list-container {
   display: none;
+
 }
-.list-container.show-mobile {
+#list-container.show-nav {
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 60px;
-  left: 0;
+  right: 0;
   width: 100%;
   background-color: rgba(221, 161, 94, 0.8);
   z-index: 1;
+  width: 50%;
+  margin-top: 40px;
 }
-.list-container.show-mobile ul {
+i.fas.fa-bars{
+  width: 40px;
+}
+#list-container.show-nav ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
-}
 
-.list-container.show-mobile li {
+}
+#list-container.show-nav li {
   padding: 15px;
   text-align: center;
 }
-
-.list-container.show-mobile a {
+#list-container.show-nav a {
   text-decoration: none;
   color: #fefae0;
   font-size: 1.4rem;
   font-weight: 700;
 }
-.list-container.show-mobile li:hover{
+#list-container.show-nav li:hover{
   background-color: #dda15e;
 }
 /*----HERO------*/
@@ -188,7 +203,9 @@ i {
 a.button {
   margin: 15px;
 }
-
+.block-container{
+  display: flex;
+}
 /*-------OUR MARKETS-------would like to add animation to the bottom of each card*/
 
 .ourmarkets .desktop-layout {

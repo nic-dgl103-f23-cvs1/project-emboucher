@@ -35,10 +35,14 @@
       href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/a77f985c66.js"
+      crossorigin="anonymous"
+    ></script>
     <script>
-      function toggleMobileNav() {
-        var listContainer = document.querySelector(".list-container");
-        listContainer.classList.toggle("show-mobile");
+      function showNav() {
+        var element = document.getElementById("list-container");
+        element.classList.toggle("show-nav");
       }
     </script>
   </head>
@@ -48,15 +52,16 @@
         <nav>
           <img
             class="logo"
-            onclick="toggleMobileNav()"
             src="images/logo1.png"
-            width="150px"
+            width="120px"
             alt="comox valley farmers market logo and menue"
           />
-          <!-- hoping to avoid using original logo but will leave for last incase too time consuming-->
-          <div class="list-container">
+          <a class="toggle" onclick="showNav()"
+            ><i class="fas fa-bars" aria-hidden="true"></i
+          ></a>
+          <div id="list-container">
             <ul>
-              <li><a href="#">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="ourmarkets.html">Our Markets</a></li>
               <li><a href="community.html">Join the Community</a></li>
               <li><a href="#">Contact Us</a></li>
@@ -145,67 +150,69 @@
     </div>
 
     <div class="bg">
-    <section class="community mobile-layout desktop-layout">
-      <h2>Join the Community!</h2>
-      <p>
-        There are many ways to engage with our CVFM community beyond just
-        shopping. We love hosting musicians, welcoming new volunteers, and are
-        continuously seeking additional vendors to join our markets.
-      </p>
-      <div class="button-container">
-        <a class="button" href="#">Our Vendors</a>
-        <a class="button" href="#">Volunteer</a>
-        <a class="button" href="#">Apply Now!</a>
-      </div>
-      <div class="community-container">
-        <div class="community-container1">
-          <div class="community-container2">
-            <div class="perks">
-              <h3>Volunteer with us</h3>
-              <p>
-                We depend on committed volunteers to run our weekly markets,
-                offering perks like early access, gifts, discounts, and tickets
-                to the Fall Harvest Feast. Join us by volunteering today!
-              </p>
+      <section class="community mobile-layout desktop-layout">
+        <h2>Join the Community!</h2>
+        <p>
+          There are many ways to engage with our CVFM community beyond just
+          shopping. We love hosting musicians, welcoming new volunteers, and are
+          continuously seeking additional vendors to join our markets.
+        </p>
+        <div class="button-container">
+          <a class="button" href="#">Our Vendors</a>
+          <a class="button" href="#">Volunteer</a>
+          <a class="button" href="#">Apply Now!</a>
+        </div>
+        <div class="community-container">
+          <div class="community-container1">
+            <div class="community-container2">
+              <div class="perks">
+                <h3>Volunteer with us</h3>
+                <p>
+                  We depend on committed volunteers to run our weekly markets,
+                  offering perks like early access, gifts, discounts, and
+                  tickets to the Fall Harvest Feast. Join us by volunteering
+                  today!
+                </p>
+              </div>
+              <div class="perks">
+                <h3>Become a Vendor</h3>
+                <p>
+                  Our markets thrive with the support of passionate vendors who
+                  contribute to our vibrant community. Enjoy exclusive benefits
+                  like prime booth locations, promotional opportunities, and
+                  invitations to special events. Elevate your business by
+                  becoming a vendor with us today!
+                </p>
+              </div>
             </div>
-            <div class="perks">
-              <h3>Become a Vendor</h3>
-              <p>
-                Our markets thrive with the support of passionate vendors who
-                contribute to our vibrant community. Enjoy exclusive benefits
-                like prime booth locations, promotional opportunities, and
-                invitations to special events. Elevate your business by becoming
-                a vendor with us today!
-              </p>
+            <div class="community-container2">
+              <div class="perks">
+                <h3>CVFM Music</h3>
+                <p>
+                  You might visit us to enjoy the music, but have you ever
+                  considered playing it? We are always looking for passionate
+                  local musicians to promote at our markets and we are so lucky
+                  to have such great talent here on Vancouver Island.
+                </p>
+              </div>
+              <div class="perks">
+                <h3>Shop our Vendors</h3>
+                <p>
+                  If you haven't been to the CVFM yet, let me tell you, you
+                  don't even know what you're missing out on yet! Our vendors
+                  travel from both far and near (but mostly near) to sell their
+                  crafted products to you. With such a variety, how could you
+                  not shop local? From lettuce to lemon lattice, we've got you
+                  covered.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="community-container2">
-            <div class="perks">
-              <h3>CVFM Music</h3>
-              <p>
-                You might visit us to enjoy the music, but have you ever
-                considered playing it? We are always looking for passionate
-                local musicians to promote at our markets and we are so lucky to
-                have such great talent here on Vancouver Island.
-              </p>
-            </div>
-            <div class="perks">
-              <h3>Shop our Vendors</h3>
-              <p>
-                If you haven't been to the CVFM yet, let me tell you, you don't
-                even know what you're missing out on yet! Our vendors travel
-                from both far and near (but mostly near) to sell their crafted
-                products to you. With such a variety, how could you not shop
-                local? From lettuce to lemon lattice, we've got you covered.
-              </p>
-            </div>
+          <div class="bill for-desktop-img" width="300" height="500">
+            <div class="opacitylayer-bill"></div>
           </div>
         </div>
-        <div class="bill for-desktop-img" width="300" height="500">
-          <div class="opacitylayer-bill"></div>
-        </div>
-      </div>
-    </section>
+      </section>
     </div>
 
     <div class="contact-container hide-on-mobile">
