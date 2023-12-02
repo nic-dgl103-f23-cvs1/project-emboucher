@@ -341,9 +341,13 @@ a.button {
   height: 5px;
   line-height: 9px;
 }
+.community h2{
+  padding-top: 80px;
+}
 .community .button-container {
   display: flex;
   flex-direction: row;
+  padding-top: 30px;
 }
 .community p,
 .community h3 {
@@ -355,15 +359,23 @@ a.button {
 .for-desktop-img {
   display: none;
 }
+.bg .community{
+  padding-bottom: 100px;
+}
 
 /*--CONTACT--*/
+.contact h2, .contact h3, .contact p, .contact address{
+  color: #fefae0;
+}
 .contact h3 {
   margin-bottom: 0;
 }
 iframe {
   margin-top: 50px;
 }
-
+.contact.mobile-layout{
+  margin-top: 70px;
+}
 /*---CTA---*/
 .cta.mobile-layout {
   display: flex;
