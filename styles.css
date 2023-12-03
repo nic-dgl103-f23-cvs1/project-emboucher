@@ -191,7 +191,9 @@ h1.hide-on-desktop {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: #606c38;
+  /* background-color: #606c38; */
+  /* background-color: rgba(221, 161, 94, 0.8); */
+  background-color: #dfc9af;
   opacity: 0.3;
 }
 
@@ -587,13 +589,18 @@ footer.mobile-layout.desktop-layout {
     margin-top: 0;
   }
   blockquote {
-    width: 320px;
+    width: 455px;
   }
   .hero .button {
     margin: 20px;
   }
+  .hero i{
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
   .hero .button-container {
     margin: 10px;
+    flex-direction: row;
   }
   .hero .hide-on-mobile {
     display: flex;
@@ -601,17 +608,31 @@ footer.mobile-layout.desktop-layout {
   }
   h1.hide-on-mobile {
     font-weight: 700;
-    font-size: 6.2rem;
+    font-size: 7.2rem;
     margin: 50px;
   }
   .hero-content-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  h2.hide-on-mobile {
-    color: #fefae0;
+  .hero {
+    position: relative;
   }
-
+  
+  .illustration {
+    background-image: url('images/white-flower.png');
+    background-size:contain;
+    background-position: top left;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    height: 100%;
+    width: 200px;
+  }
+  
   /*----OUR MARKETS DESKTOP----*/
 
   .market-card {
