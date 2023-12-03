@@ -895,13 +895,15 @@ footer.mobile-layout.desktop-layout {
     padding: 0;
   }
   .list-container li {
-    margin-right: 20px;
+    border-right: #283618 solid 1px;
+
   }
   .list-container a {
     text-decoration: none;
     font-size: 1.4rem;
     color: #283618;
     font-weight: 400;
+    margin: 20px;
   }
   /*---DISCLAIMER---*/
   section.disclaimer.desktop-layout {
