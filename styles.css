@@ -191,10 +191,10 @@ h1.hide-on-desktop {
   width: 100%;
   height: 100%;
   z-index: -1;
-  /* background-color: #606c38; */
+  background-color: #606c38;
   /* background-color: rgba(221, 161, 94, 0.8); */
-  background-color: #dfc9af;
-  opacity: 0.3;
+  /* background-color: #dfc9af; */
+  opacity: 0.5;
 }
 
 i {
@@ -230,7 +230,7 @@ a.button {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
-  border: 10px solid #dda15e;
+  border: 10px solid #606c38;
 }
 .market-card:hover {
   transform: translateY(-10px);
@@ -252,7 +252,7 @@ a.button {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #dda15e;
+  background: #606c38;
   opacity: 0.5;
   z-index: 1;
 }
@@ -261,7 +261,7 @@ a.button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #dda15e;
+  background: #606c38;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -299,9 +299,9 @@ a.button {
   line-height: 1.4rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: #fefae0;
+  color: #606c38;
   font-weight: bold;
-  background-color: #606c38;
+  background-color: #fefae0;
   padding: 10px 20px;
   margin-top: 5px;
   border-radius: 5px;
@@ -311,8 +311,9 @@ a.button {
 }
 
 .market-card a:hover {
-  background-color: #606c38;
-  color: #fefae0;
+  background-color: #ffd7a9;
+  color: #bc6c25;
+  font-style: bold;
   cursor: pointer;
 }
 
@@ -536,6 +537,21 @@ footer.mobile-layout.desktop-layout {
     margin-top: 80px;
     margin-bottom: 80px;
   }
+  p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+  h3 {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
+  h2 {
+    font-size: 4.2rem;
+    line-height: 4rem;
+  }
+  h1 {
+    font-size: 7.2rem;
+  }
 
   /*-----HEADER FOR DESKTOP------*/
   header.desktop-layout {
@@ -573,7 +589,7 @@ footer.mobile-layout.desktop-layout {
   #list-container a {
     text-decoration: none;
     font-size: 1.6rem;
-    color: #bc6c25;
+    color: #283618;
     font-weight: 700;
   }
   .logo {
@@ -594,7 +610,7 @@ footer.mobile-layout.desktop-layout {
   .hero .button {
     margin: 20px;
   }
-  .hero i{
+  .hero i {
     font-size: 1.8rem;
     line-height: 2.4rem;
   }
@@ -620,10 +636,10 @@ footer.mobile-layout.desktop-layout {
   .hero {
     position: relative;
   }
-  
-  .illustration {
-    background-image: url('images/white-flower.png');
-    background-size:contain;
+
+  .hero .illustration {
+    background-image: url("images/white-flower.png");
+    background-size: contain;
     background-position: top left;
     background-repeat: no-repeat;
     position: absolute;
@@ -632,50 +648,101 @@ footer.mobile-layout.desktop-layout {
     height: 100%;
     width: 200px;
   }
-  
-  /*----OUR MARKETS DESKTOP----*/
 
-  .market-card {
-    margin: 10px;
-    width: 300px;
-    margin: 5px 80px;
-  }
+  /*----OUR MARKETS DESKTOP----*/
   .block-container {
     display: flex;
-    flex-direction: row;
-  }
-  .link-layout {
-    display: flex;
     flex-direction: column;
-  }
-  .content-container {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-right: 30px;
+    align-items: center;
+    justify-content: center;
   }
   .content-container h2 {
-    margin-bottom: 20px 0 20px 0;
-    margin-top: 20px;
+    font-size: 4.2rem;
   }
-  .card-container {
-    display: flex;
+  .content-container p {
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+    width: 800px;
     margin: 0;
+  }
+  .market-card {
+    margin: 20px;
+    width: 320px;
+  }
+  .market-card h3 {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
+  .opacitylayer {
+    width: 70%;
+  }
+  .opacitylayer h2 {
+    font-size: 3rem;
   }
 
   /*---------JOIN THE COMMUNITY--DESKTOP-----*/
+
+  .community.desktop-layout {
+    margin-top: 300px;
+    margin-bottom: 300px;
+  }
+  .community {
+    position: relative;
+  }
+  .section-illustration-top,
+  .section-illustration-bottom {
+    background-image: url("images/green-flower2.png");
+    background-size: contain;
+    position: absolute;
+    width: 390px;
+    height: 100%;
+  }
+  .section-illustration-top {
+    background-position: top left;
+    background-repeat: no-repeat;
+    top: -150px;
+    left: -300px;
+  }
+  .section-illustration-bottom {
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    bottom: -550px;
+    right: -300px;
+  }
   .community-container {
     display: flex;
     margin-top: 50px;
+    width: 1400px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
   }
   .for-desktop-img {
     display: flex;
-  } /*TODO ---opacity layer not going on top of image??*/
+  }
   .bill {
     background-image: url(images/bill.jpeg);
     background-size: cover;
     border-radius: 7%;
     border: #606c38 solid 3px;
+    width: 400px;
+    height: 500px;
+    position: relative;
+  }
+
+  .community .button-container {
+    margin-top: 0;
+  }
+  .bill .illustration {
+    background-image: url("images/white-flower.png");
+    background-size: contain;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    height: 100%;
+    width: 180px;
   }
   .opacitylayer-bill {
     width: 400px;
@@ -683,6 +750,8 @@ footer.mobile-layout.desktop-layout {
     background: rgba(126, 134, 98, 0.37);
     padding: 10px;
     border-radius: 7%;
+    padding: 0;
+    margin: 0;
   }
   .community-container1 {
     display: flex;
@@ -697,6 +766,11 @@ footer.mobile-layout.desktop-layout {
     flex-direction: column;
     padding: 15px;
     width: 300px;
+    margin: 15px;
+  }
+  .perks p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
   }
   .button-container {
     margin-top: 30px;
@@ -706,14 +780,14 @@ footer.mobile-layout.desktop-layout {
     width: 150px;
     margin: 10px;
     display: flex;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     height: 5px;
     line-height: 9px;
   }
   .community h3 {
     margin-top: 0;
   }
-  /*----what size should p font be on desktop? it seems small currently*/
+
   /*-----CONTACT FOR DESKTOP------------*/
   .contact-container {
     background-image: url(images/courtenay-map.jpg);
