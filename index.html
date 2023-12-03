@@ -37,9 +37,12 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/a77f985c66.js"
       crossorigin="anonymous"
@@ -55,12 +58,13 @@
     <div class="nav-container">
       <header class="desktop-layout">
         <nav>
-          <a href="index.html"><img
-            class="logo"
-            src="images/logo1.png"
-            width="120px"
-            alt="comox valley farmers market logo and menue"
-          />
+          <a href="index.html"
+            ><img
+              class="logo"
+              src="images/logo1.png"
+              width="120px"
+              alt="comox valley farmers market logo and menue"
+            />
           </a>
           <a class="toggle" onclick="showNav()"
             ><i class="fas fa-bars" aria-hidden="true"></i
@@ -239,48 +243,7 @@
       </section>
     </div>
 
-    <div class="contact-container hide-on-mobile">
-      <div class="map"></div>
-      <section class="contact mobile-layout desktop-layout">
-        <h2>We'd love to hear from you!</h2>
-        <p>
-          Looking for a vendor? Want to donate to our New Farmer Bursary Fund?
-          Need a bag or market tokens? Lost something or have a suggestion?
-          Please let us know. The market staff and volunteers on site can help
-          you out, or for other inquiries, you can contact us online.
-        </p>
-        <h3>Contact Info</h3>
-
-        <address>
-          <div class="icon-holder">
-            <i class="fa-solid fa-envelopes-bulk"></i>
-            <p>PO Box 3301 <br />Courtenay BC <br />V9N 5N5</p>
-          </div>
-          <div class="icon-holder email">
-            <i class="fa-regular fa-envelope"></i>
-            <a href="mailto:email@example.com">info@cvfm.ca</a>
-          </div>
-          <div class="icon-holder">
-            <i class="fa-brands fa-instagram"></i>
-            <a
-              class="social-media"
-              href="https://www.instagram.com/comox_valley_farmers_market/"
-              >Instagram</a
-            >
-          </div>
-        </address>
-        <iframe
-          class="hide-on-desktop"
-          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d10322.593830659443!2d-125.011117720889!3d49.69859257238851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scomox%20valley%20farmers%20market!5e0!3m2!1sen!2sca!4v1701313614914!5m2!1sen!2sca"
-          width="270"
-          height="300"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </section>
-    </div>
+    
 
     <div class="bgcolour">
       <section class="cta mobile-layout desktop-layout">
@@ -316,10 +279,46 @@
             name="email"
             placeholder="Ex: john.smith@outlook.com"
           />
+          <input class="button submit-button form-button" type="submit" value="Submit" />
         </form>
-        <div class="form-button">
-          <input class="button submit-button" type="submit" value="Submit" />
-        </div>
+          <div class="section-illustration-bottom-white"></div>
+      </section>
+    </div>
+    <div class="contact-container">
+      <section class="contact mobile-layout desktop-layout">
+        <h2>We'd love to hear from you!</h2>
+        <p>
+          Looking for a vendor? Want to donate to our New Farmer Bursary Fund?
+          Need a bag or market tokens? Lost something or have a suggestion?
+          Please let us know. The market staff and volunteers on site can help
+          you out, or for other inquiries, you can contact us online.
+        </p>
+        <h3>Contact Info</h3>
+        <address>
+          <div class="icon-holder">
+            <i class="fa-solid fa-envelopes-bulk"></i>
+            <p>PO Box 3301 <br />Courtenay BC <br />V9N 5N5</p>
+          </div>
+          <div class="icon-holder email">
+            <i class="fa-regular fa-envelope"></i>
+            <a href="mailto:email@example.com">info@cvfm.ca</a>
+          </div>
+          <div class="icon-holder">
+            <i class="fa-brands fa-instagram"></i>
+            <a
+              class="social-media"
+              href="https://www.instagram.com/comox_valley_farmers_market/"
+              >Instagram</a
+            >
+          </div>
+        </address>
+        <iframe class="google-map"
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d10322.593830659443!2d-125.011117720889!3d49.69859257238851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scomox%20valley%20farmers%20market!5e0!3m2!1sen!2sca!4v1701313614914!5m2!1sen!2sca"
+          style="border:0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </div>
 
