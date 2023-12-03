@@ -595,7 +595,7 @@ footer.mobile-layout.desktop-layout {
   #list-container a:hover {
     color: #dda15e;
   }
-  #list-container .cursor-notallowed a:hover{
+  #list-container .cursor-notallowed a:hover, .list-container .cursor-notallowed a:hover{
     color: #606c38;
     cursor: not-allowed;
   }
@@ -603,7 +603,6 @@ footer.mobile-layout.desktop-layout {
     text-decoration: none;
     font-size: 1.6rem;
     color: #283618;
-    font-weight: 700;
   }
   .logo {
     display: flex;
@@ -888,6 +887,9 @@ footer.mobile-layout.desktop-layout {
   footer.mobile-layout.desktop-layout nav {
     margin-bottom: 20px;
   }
+  .cursor-notallowed a:hover{
+    cursor: not-allowed;
+  }
   .list-container ul {
     list-style: none;
     display: flex;
@@ -896,7 +898,9 @@ footer.mobile-layout.desktop-layout {
   }
   .list-container li {
     border-right: #283618 solid 1px;
-
+  }
+  li.home-link{
+    border-right: none;
   }
   .list-container a {
     text-decoration: none;
@@ -905,6 +909,24 @@ footer.mobile-layout.desktop-layout {
     font-weight: 400;
     margin: 20px;
   }
+  footer img.logo{
+    width: 200px;
+  }
+footer {
+    position: relative;
+  }
+.section-illustration-nav {
+    background-image: url("images/greenbeet.png");
+    background-size: cover;
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background-position: top right;
+    background-repeat: no-repeat;
+    top: -190px;
+    right: -300px;
+  }
+
   /*---DISCLAIMER---*/
   section.disclaimer.desktop-layout {
     margin: 0;
