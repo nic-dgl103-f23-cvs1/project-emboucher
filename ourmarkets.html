@@ -37,9 +37,12 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/a77f985c66.js"
       crossorigin="anonymous"
@@ -51,16 +54,17 @@
       }
     </script>
   </head>
-  <body>
+  <body class="marketpage">
     <div class="nav-container">
-      <header>
+      <header class="desktop-layout">
         <nav>
-          <a href="index.html"><img
-            class="logo"
-            src="images/logo1.png"
-            width="120px"
-            alt="comox valley farmers market logo and menue"
-          />
+          <a href="index.html"
+            ><img
+              class="logo"
+              src="images/logo1.png"
+              width="120px"
+              alt="comox valley farmers market logo and menue"
+            />
           </a>
           <a class="toggle" onclick="showNav()"
             ><i class="fas fa-bars" aria-hidden="true"></i
@@ -68,11 +72,19 @@
           <div id="list-container">
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="ourmarkets.html">Our Markets</a></li>
+              <li class="currentpage">
+                <a href="ourmarkets.html">Our Markets</a>
+              </li>
               <li><a href="community.html">Join the Community</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Vendors</a></li>
+              <li class="cursor-notallowed" style="cursor: not-allowed">
+                <a href="#">Contact Us</a>
+              </li>
+              <li class="cursor-notallowed" style="cursor: not-allowed">
+                <a href="#">About Us</a>
+              </li>
+              <li class="cursor-notallowed" style="cursor: not-allowed">
+                <a href="#">Vendors</a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -86,17 +98,17 @@
         loop
         muted
         playsinline
-        title="Video of Tomatoes"
-        poster="images/tomatosposter.png"
+        title="Vendor at market"
+        poster="images/market-vendor-still.png"
       >
-        <source src="images/tomatovid2.mp4" type="video/mp4" />
+        <source src="images/vendor-video.mp4" type="video/mp4" />
       </video>
       <div class="video-overlay"></div>
-
       <h1 class="hide-on-mobile">
-        <strong> Comox Valley Farmer's Market</strong>
+        <strong> Comox Valley Farmer's Market's</strong>
       </h1>
-      <h2 class="hide-on-mobile">Buy Local - Eat Local</h2>
+      <h2 class="hide-on-mobile">In Season Shopping All Year Long</h2>
+      <div class="illustration"></div>
       <div class="hero-content-container">
         <h1 class="hide-on-desktop">
           Welcome to the Comox Valley Farmers Market!
@@ -110,7 +122,7 @@
         </blockquote>
         <div class="button-container">
           <a class="button" href="ourmarkets.html">Our Markets</a>
-          <a class="button" href="community.html">Join the Community!</a>
+          <a class="button" href="community.html">Join the Community</a>
         </div>
       </div>
     </section>
@@ -124,8 +136,72 @@
               Don't miss out on these community events! Make sure to mark your
               calendar, support local, and eat well.
             </p>
+            <div class="wrapper">
+              <table>
+                <caption>
+                  2023 Upcoming Markets
+                </caption>
+                <thead>
+                  <tr>
+                    <th>Location</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Native Sons Hall</td>
+                    <td>December 9, 2023</td>
+                    <td>9:00 am - 1:00pm</td>
+                  </tr>
+                  <tr>
+                    <td>Native Sons Hall</td>
+                    <td>December 16, 2023</td>
+                    <td>9:00 am - 1:00pm</td>
+                  </tr>
+                  <tr>
+                    <td>Native Sons Hall</td>
+                    <td>December 23, 2023</td>
+                    <td>9:00 am - 1:00pm</td>
+                  </tr>
+                  <tr>
+                    <td>Native Sons Hall</td>
+                    <td>January 6, 2024</td>
+                    <td>9:00 am - 1:00pm</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="3">All data current as of Nov 29, 2023</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <p>Check back soon for more market dates!</p>
           </div>
-          <div class="card-container">
+        </div>
+      </section>
+    </div>
+
+    <div class="bg-green">
+      <section class="ourmarkets mobile-layout desktop-layout">
+        <div class="sat-market">
+          <div class="content-container mobile-layout">
+            <h2>Saturday Market</h2>
+            <p>
+              This is our most popular market year round. During the spring and
+              summer you can expect to visit us at the Comox Valley Fair
+              Grounds. In the Fall, come and find us at the Native Son's Hall
+              parking lot and perhaps grab a beer from Gladstones after! During
+              the winter we move inside so you all can stay cozy and warm.
+            </p>
+          </div>
+          <div class="image-container">
+            <div class="market-img1"></div>
+            <div class="market-img2"></div>
+            <div class="market-img3"></div>
+          </div>
+          <!-- <div class="card-container">
             <div class="market-card sat">
               <div class="image-layer"></div>
               <div class="background-image"></div>
@@ -165,13 +241,14 @@
           </div>
         </div>
         <div class="link-layout">
-          <a class="button" href="ourmarkets.html">Our Markets</a>
+          <a class="button" href="ourmarkets.html">Our Markets</a> -->
         </div>
       </section>
     </div>
 
     <div class="bg">
       <section class="community mobile-layout desktop-layout">
+        <div class="section-illustration-top"></div>
         <h2>Join the Community!</h2>
         <p>
           There are many ways to engage with our CVFM community beyond just
@@ -231,12 +308,56 @@
           </div>
           <div class="bill for-desktop-img" width="300" height="500">
             <div class="opacitylayer-bill"></div>
+            <div class="illustration"></div>
           </div>
+          <div class="section-illustration-bottom"></div>
         </div>
       </section>
     </div>
 
-    <div class="contact-container hide-on-mobile">
+    <div class="bgcolour">
+      <section class="cta mobile-layout desktop-layout">
+        <div class="cta-content-container">
+          <h2>Stay in Touch!</h2>
+          <p class="hide-on-desktop">Sign up for our newsletter!</p>
+          <p class="for-desktop">
+            Ready to turnip the beet in your inbox? Sign up for our newsletter
+            and lettuce keep you in the loop with all the fresh and fabulous
+            CVFM fun! Be the first to know about upcoming markets, seasonal
+            goodies, and exclusive promotions that are so grape, you won't want
+            to miss them. Join our community, and together, we'll create a
+            veggie good time! Subscribe today!
+          </p>
+        </div>
+        <form action="#" method="post">
+          <label for="fname">First Name:</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Ex: John"
+          />
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" placeholder=" Ex: Smith" />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Ex: john.smith@outlook.com"
+          />
+          <input
+            class="button submit-button form-button"
+            type="submit"
+            value="Submit"
+          />
+        </form>
+        <div class="section-illustration-bottom-white"></div>
+      </section>
+    </div>
+
+    <div class="contact-container">
       <section class="contact mobile-layout desktop-layout">
         <h2>We'd love to hear from you!</h2>
         <p>
@@ -246,7 +367,6 @@
           you out, or for other inquiries, you can contact us online.
         </p>
         <h3>Contact Info</h3>
-
         <address>
           <div class="icon-holder">
             <i class="fa-solid fa-envelopes-bulk"></i>
@@ -266,10 +386,8 @@
           </div>
         </address>
         <iframe
-          class="hide-on-desktop"
+          class="google-map"
           src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d10322.593830659443!2d-125.011117720889!3d49.69859257238851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scomox%20valley%20farmers%20market!5e0!3m2!1sen!2sca!4v1701313614914!5m2!1sen!2sca"
-          width="270"
-          height="300"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
@@ -278,66 +396,25 @@
       </section>
     </div>
 
-    <div class="bgcolour">
-      <section class="cta mobile-layout desktop-layout">
-        <div class="cta-content-container">
-          <h2>Stay in Touch!</h2>
-          <p class="hide-on-desktop">Sign up for our newsletter!</p>
-          <p class="for-desktop">
-            Ready to turnip the beet in your inbox? Sign up for our newsletter
-            and lettuce keep you in the loop with all the fresh and fabulous
-            CVFM fun! Be the first to know about upcoming markets, seasonal
-            goodies, and exclusive promotions that are so grape, you won't want
-            to miss them. Join our community, and together, we'll create a
-            veggie good time! Subscribe today!
-          </p>
-        </div>
-
-        <form action="#" method="post">
-          <label for="fname">First Name:</label>
-          <input
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Ex: John"
-          />
-
-          <label for="lname">Last Name:</label>
-          <input type="text" id="lname" name="lname" placeholder=" Ex: Smith" />
-
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Ex: john.smith@outlook.com"
-          />
-        </form>
-        <div class="form-button">
-          <input class="button submit-button" type="submit" value="Submit" />
-        </div>
-      </section>
-    </div>
-
     <div class="nav-container">
       <footer class="mobile-layout desktop-layout">
-        <img src="images/logo1.png" width="150px" />
-        <p>
-          Rooted in Community, Nourished by Local Bounty - Comox Valley Farmers
-          Market - Your Source for Fresh Connections.
-        </p>
+        <img class="logo" src="images/logo1.png" width="190px" />
+        <p>Rooted in Community, Nourished by Local Bounty</p>
+        <h2>Comox Valley Farmers Market</h2>
+        <p>Your Source for Fresh Connections.</p>
         <nav>
           <div class="list-container">
             <ul>
               <li><a href="ourmarkets.html">Our Markets</a></li>
               <li><a href="community.html">Join the Community</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Vendors</a></li>
-              <li><a href="index.html">Home</a></li>
+              <li class="cursor-notallowed"><a href="#">Contact Us</a></li>
+              <li class="cursor-notallowed"><a href="#">About Us</a></li>
+              <li class="cursor-notallowed"><a href="#">Vendors</a></li>
+              <li class="home-link"><a href="index.html">Home</a></li>
             </ul>
           </div>
         </nav>
+        <div class="section-illustration-nav"></div>
       </footer>
     </div>
 

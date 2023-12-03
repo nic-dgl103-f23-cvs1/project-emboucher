@@ -340,6 +340,71 @@ a.button {
 .link-layout {
   margin-bottom: 40px;
 }
+/*-----MARKET PAGE STYLES----*/
+.wrapper {
+  /* overflow-x:auto; */
+}
+table {
+font-family: "Scope One", serif;
+width: 100%;
+border-collapse: collapse;
+margin: 20px;
+}
+caption {
+font-size: 1.6em;
+font-weight: bold;
+text-align: left;
+padding: 10px 0;
+color: #606c38;
+line-height: 3rem;
+}
+td,
+th {
+  border: 1px solid #ddd;
+padding: 8px;
+}
+th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #9a581e;
+color: #fefae0;
+}
+tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+tbody tr:hover {
+background-color: #ddd;
+}
+td.merge {
+text-align: center;
+font-style: italic;
+}
+tfoot {
+font-size: 0.8em;
+font-style: italic;
+text-align: center;
+background-color: #c5c5c5;
+}
+.wrapper {
+overflow: auto;
+}
+
+.bg-green{
+  background-color: #606c38;
+}
+.sat-market h2, .sat-market p{
+  color: #fefae0;
+}
+.image-container{
+  display: flex;
+}
+.market-img1{
+  background-image: url(images/sat-market.jpg);
+  width: 150px;
+  margin: 20px auto;
+  display: flex;
+}
 /*----COMMUNITY----*/
 .community a {
   width: 50px;
@@ -610,6 +675,9 @@ footer.mobile-layout.desktop-layout {
     padding: 0;
     margin: 0;
   }
+  .marketpage #list-container .currentpage a{
+    color: #9a581e;
+  }
 
   /*---HERO HOME PAGE DESKTOP---*/
   .hero {
@@ -660,6 +728,14 @@ footer.mobile-layout.desktop-layout {
     height: 100%;
     width: 200px;
   }
+/*---MARKET PAGE STYLES----*/
+.marketpage .hero .illustration{
+  left: 2%;
+}
+
+
+/*-----------*/
+
 
   /*----OUR MARKETS DESKTOP----*/
   .block-container {
