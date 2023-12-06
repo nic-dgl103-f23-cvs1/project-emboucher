@@ -215,6 +215,25 @@ a.button {
   justify-content: center;
   align-items: center;
 }
+
+/*----COMMUNITY PAGE STYLES-----*/
+.communitypage h1{
+  font-size: 4.4rem;
+  margin-top: 140px;
+}
+.communitypage h2, .communitypage .hero p{
+  color: #fefae0;
+}
+.volunteer h2, .vendor h2{
+  color: #283618;
+  margin-top: 100px;
+}
+.volunteer .button, .vendor .button{
+  margin-bottom: 100px;
+}
+.communitypage .nav-container h2{
+  color: #283618;
+}
 /*-------OUR MARKETS-------would like to add animation to the bottom of each card*/
 .card-container {
   display: flex;
@@ -701,10 +720,7 @@ footer.mobile-layout.desktop-layout {
     padding: 0;
     margin: 0;
   }
-  .marketpage #list-container .currentpage a{
-    color: #9a581e;
-  }
-  .homepage #list-container .currentpage a, .homepage .currentpage a{
+  .homepage #list-container .currentpage a, .homepage .currentpage a,.marketpage #list-container .currentpage a, .communitypage #list-container .currentpage a{
     color: #9a581e;
   }
   /*---HERO HOME PAGE DESKTOP---*/
@@ -806,7 +822,7 @@ caption{
   background-color:#bc6c25;
   border: #fefae0 dotted 2px;
 }
-.marketpage .currentpage a{
+.marketpage .currentpage a, .communitypage .currentpage a{
   color: #9a581e;
 }
 .marketpage .section-illustration-nav {
@@ -869,9 +885,24 @@ caption{
   .opacitylayer h2 {
     font-size: 3rem;
   }
-
+/*--Community Page Styles--*/
+.communitypage h1{
+  font-size: 7.2rem;
+  margin-top: 0;
+}
+.communitypage p{
+  width: 600px;
+}
+.communitypage .illustration{
+  left:-50px;
+}
+.communitypage .cta.desktop-layout{
+  margin-top: 0;
+}
+.communitypage .contact address p{
+  width: auto;
+}
   /*---------JOIN THE COMMUNITY--DESKTOP-----*/
-
   .community.desktop-layout {
     margin-top: 300px;
     margin-bottom: 150px;
