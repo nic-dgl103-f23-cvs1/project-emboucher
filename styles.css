@@ -184,7 +184,7 @@ h1.hide-on-desktop {
 }
 #video-container {
   width: 100%;
-  height: autmarginto;
+  height: auto;
   overflow: hidden;
   margin-bottom: 50px;
 }
@@ -394,7 +394,6 @@ a.button, a.button2 {
 .market-card a:hover {
   background-color: #ffd7a9;
   color: #bc6c25;
-  font-style: bold;
   cursor: pointer;
 }
 
@@ -553,7 +552,7 @@ tfoot {
 }
 a.social-media {
   text-decoration: none;
-  font-style: none;
+  font-style: normal;
   font-family: "lobster", serif;
   font-size: 2.3rem;
   color: #fefae0;
