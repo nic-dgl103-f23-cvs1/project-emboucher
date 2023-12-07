@@ -93,6 +93,11 @@ li {
   background-color: #fefae0;
   color: #9a581e;
 }
+  .button2:hover {
+    border: #bc6c25 solid 2px;
+    background-color: #9a581e;
+    color: #fefae0;
+  }
 .logo {
   cursor: pointer;
 }
@@ -212,7 +217,7 @@ i {
   font-size: 1.3rem;
   line-height: 1rem;
 }
-a.button {
+a.button, a.button2 {
   margin: 15px;
 }
 .button-container {
@@ -787,6 +792,8 @@ footer.mobile-layout.desktop-layout {
   .hero .button-container {
     margin: 10px;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   .hero .hide-on-mobile {
     display: flex;
@@ -842,6 +849,12 @@ footer.mobile-layout.desktop-layout {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .marketpage .ourmarkets .wed-market h2{
+    color: #606c38;
+  } 
+  .marketpage .ourmarkets .wed-market p{
+    color: #283618;
   }
   .season-container {
     display: flex;
@@ -951,7 +964,6 @@ footer.mobile-layout.desktop-layout {
   }
   /*---------JOIN THE COMMUNITY--DESKTOP-----*/
   .community.desktop-layout {
-    margin-top: 300px;
     margin-bottom: 150px;
   }
   .community {
@@ -999,7 +1011,8 @@ footer.mobile-layout.desktop-layout {
   }
 
   .community .button-container {
-    margin-top: 0;
+    margin-top: 30px;
+    display: flex;
   }
   .bill .illustration {
     background-image: url("images/white-flower.png");
@@ -1040,10 +1053,6 @@ footer.mobile-layout.desktop-layout {
     font-size: 1.6rem;
     line-height: 2.6rem;
   }
-  .button-container {
-    margin-top: 30px;
-    display: flex;
-  }
   .community a {
     width: 150px;
     margin: 10px;
@@ -1075,7 +1084,6 @@ footer.mobile-layout.desktop-layout {
     margin-bottom: 0;
     display: flex;
     align-items: center;
-    margin-top: 300px;
   }
   .hide-on-desktop {
     display: none;
