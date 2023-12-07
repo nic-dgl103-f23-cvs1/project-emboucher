@@ -467,7 +467,7 @@ tfoot {
   font-size: 0.8em;
   font-style: italic;
   text-align: center;
-  background-color: #9a581e;
+  background-color: #fefae0;
 }
 .wrapper {
   overflow: auto;
@@ -500,6 +500,9 @@ tfoot {
   flex-direction: column;
   display: flex;
   justify-content: center;
+}
+.marketpage .sat-market p, .marketpage .sat-market .market-container h2, .sun-market .market-container h2{
+  color: #fefae0;
 }
 .sat-market h3 {
   margin-bottom: 0;
@@ -924,8 +927,11 @@ footer.mobile-layout.desktop-layout {
     align-items: center;
     justify-content: center;
   }
-  .content-container h2 {
+  .marketpage .ourmarkets h2{
     font-size: 4.2rem;
+  }
+  .marketpage .ourmarkets .content-container p{
+    color: #283618;
   }
   .content-container p {
     font-size: 2.4rem;
