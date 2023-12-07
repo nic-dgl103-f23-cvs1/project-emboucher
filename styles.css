@@ -204,7 +204,7 @@ h1.hide-on-desktop {
   background-color: #606c38;
   /* background-color: rgba(221, 161, 94, 0.8); */
   /* background-color: #dfc9af; */
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 i {
@@ -243,12 +243,54 @@ a.button {
 .communitypage .nav-container h2 {
   color: #283618;
 }
-/*-------OUR MARKETS-------would like to add animation to the bottom of each card*/
+/*----COMMUNITY----*/
+.community a {
+  width: 50px;
+  margin: 5px;
+  display: flex;
+  font-size: 0.8rem;
+  height: 5px;
+  line-height: 9px;
+}
+.community h2 {
+  padding-top: 80px;
+}
+.community .button-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+}
+.community p,
+.community h3 {
+  margin-bottom: 0;
+}
+.community h3 {
+  margin-top: 50px;
+}
+.for-desktop-img {
+  display: none;
+}
+.bg .community {
+  padding-bottom: 100px;
+}
+/*------COMMUNITYPAGE STYLES--*/
+.communitypage .hide-on-mobile{
+  display: none;
+}
+
+/*-------OUR MARKETS-----*/
+.ourmarkets.mobile-layout{
+  margin-top: 10px;
+
+}
 .card-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin: auto;
+}
+.ourmarkets h2, .ourmarkets p{
+  color: #fefae0;
 }
 .content-container.mobile-layout {
   margin: 80px auto 20px auto;
@@ -299,7 +341,6 @@ a.button {
   align-items: center;
   z-index: 1;
   padding: 10px;
-  /* margin:10px; */
   border-radius: 10px;
 }
 .card-content-container {
@@ -368,6 +409,10 @@ a.button {
 .link-layout {
   margin-bottom: 40px;
 }
+.ourmarkets .mobile-layout{
+  margin-top: 0;
+}
+
 /*-----MARKET PAGE STYLES----*/
 .marketpage .video-overlay {
   opacity: 0.9;
@@ -463,40 +508,7 @@ tfoot {
 .sun-market p {
   color: #fefae0;
 }
-/*----COMMUNITY----*/
-.community a {
-  width: 50px;
-  margin: 5px;
-  display: flex;
-  font-size: 0.8rem;
-  height: 5px;
-  line-height: 9px;
-}
-.community h2 {
-  padding-top: 80px;
-}
-.community .button-container {
-  display: flex;
-  flex-direction: row;
-  padding-top: 30px;
-}
-.community p,
-.community h3 {
-  margin-bottom: 0;
-}
-.community h3 {
-  margin-top: 50px;
-}
-.for-desktop-img {
-  display: none;
-}
-.bg .community {
-  padding-bottom: 100px;
-}
-/*------COMMUNITYPAGE STYLES--*/
-.communitypage .hide-on-mobile{
-  display: none;
-}
+
 /*--CONTACT--*/
 .contact h2,
 .contact h3,
