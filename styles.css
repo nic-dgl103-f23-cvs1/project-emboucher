@@ -953,14 +953,64 @@ footer.mobile-layout.desktop-layout {
   .communitypage p {
     width: 600px;
   }
+  .communitypage .step-container a{
+    color: #9a581e;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .communitypage .step-container a:hover{
+    color: #283618;
+    text-decoration: underline;
+  }
   .communitypage .illustration {
     left: -50px;
+  }
+  .communitypage .volunteer p{
+    width:1000px
   }
   .communitypage .cta.desktop-layout {
     margin-top: 0;
   }
   .communitypage .contact address p {
     width: auto;
+  }
+  .communitypage .hide-on-mobile{
+    display: flex;
+  }
+  .communitypage .step-container{
+    display: flex;
+    flex-direction: column;
+    border: #606c38 dotted 2px;
+    border-radius: 15px;
+    padding: 30px 10px;
+    margin: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 300px;
+  }
+  .communitypage .num-wrap{
+    display: flex;
+    flex-direction: column;
+  }
+  .communitypage .step-container li{
+    text-transform: none;
+    text-align: left;
+  }
+  .communitypage .step-container ol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+ .communitypage .three-step-wrap{
+    display: flex;
+    flex-direction: row;
+  }
+  .communitypage .button-container{
+    display: flex;
+    flex-direction: row;
+  }
+  .communitypage a.button, .communitypage a.button2{
+    margin:30px 15px 70px 15px;
   }
   /*---------JOIN THE COMMUNITY--DESKTOP-----*/
   .community.desktop-layout {
@@ -1188,7 +1238,7 @@ footer.mobile-layout.desktop-layout {
     height: 100%;
     background-position: top right;
     background-repeat: no-repeat;
-    top: -190px;
+    top: -40px;
     right: -300px;
   }
 
