@@ -58,7 +58,7 @@ li {
 }
 
 /*--------LINKS---------*/
-.button {
+.button, .button2{
   font-size: 1.4rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -87,6 +87,11 @@ li {
   border: #bc6c25 solid 2px;
   background-color: #fefae0;
   color: #bc6c25;
+}
+.button2{
+  border: #dda15e solid 2px;
+  background-color: #fefae0;
+  color: #9a581e;
 }
 .logo {
   cursor: pointer;
@@ -488,7 +493,10 @@ tfoot {
 .bg .community {
   padding-bottom: 100px;
 }
-
+/*------COMMUNITYPAGE STYLES--*/
+.communitypage .hide-on-mobile{
+  display: none;
+}
 /*--CONTACT--*/
 .contact h2,
 .contact h3,
@@ -654,7 +662,21 @@ footer.mobile-layout.desktop-layout {
 .disclaimer p {
   font-style: italic;
 }
-
+/*-----CONSTRUCTION PAGE-----*/
+.construction-image{
+  width: 300px;
+  margin-top: 40px;
+}
+.constructionpage h1{
+  font-size: 7.2rem;
+  margin-top: 100px;
+}
+.constructionpage .hero h2{
+  color: #fefae0;
+}
+.constructionpage footer.mobile-layout.desktop-layout{
+  margin-top: 40px;
+}
 /* Large devices (desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   /*----GLOBAL STYLES FOR DESKTOP----*/
@@ -1093,6 +1115,7 @@ footer.mobile-layout.desktop-layout {
   }
   footer h2 {
     margin: 0;
+    color: #606c38;
   }
   footer p {
     display: flex;
