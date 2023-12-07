@@ -98,9 +98,6 @@ li {
     background-color: #9a581e;
     color: #fefae0;
   }
-.logo {
-  cursor: pointer;
-}
 /*--HEADER---*/
 header {
   padding: 0 21px;
@@ -119,6 +116,9 @@ nav {
 .logo {
   display: flex;
   align-items: center;
+  width: 100px;
+  margin-top: 5px;
+  cursor: pointer;
 }
 .nav-container {
   background-color: #fefae0;
@@ -764,7 +764,7 @@ footer.mobile-layout.desktop-layout {
   }
   .logo {
     display: flex;
-    width: 100px;
+    width: 120px;
     padding: 0;
     margin: 0;
   }
