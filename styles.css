@@ -248,6 +248,9 @@ a.button, a.button2 {
 .communitypage .nav-container h2 {
   color: #283618;
 }
+.communitypage .number{
+  width: 70px;
+}
 /*----COMMUNITY----*/
 .community a {
   width: 50px;
@@ -976,6 +979,9 @@ footer.mobile-layout.desktop-layout {
   }
   .communitypage .hide-on-mobile{
     display: flex;
+  }
+  .communitypage .number{
+    width:140px;
   }
   .communitypage .step-container{
     display: flex;
