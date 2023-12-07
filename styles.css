@@ -722,6 +722,7 @@ footer.mobile-layout.desktop-layout {
   }
   h1 {
     font-size: 7.2rem;
+    line-height: 6rem;
   }
 
   /*-----HEADER FOR DESKTOP------*/
@@ -861,6 +862,9 @@ footer.mobile-layout.desktop-layout {
   .marketpage .ourmarkets .wed-market p{
     color: #283618;
   }
+  .marketpage .ourmarkets .wed-market .description p{
+    color: #fefae0;
+  }
   .season-container {
     display: flex;
     justify-content: space-around;
@@ -884,7 +888,7 @@ footer.mobile-layout.desktop-layout {
     background-color: #606c38;
   }
   .wed-market .season-container {
-    background-color: #bc6c25;
+    background-color: #606c38;
     border: #fefae0 dotted 2px;
   }
   .marketpage .currentpage a,
